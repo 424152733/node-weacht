@@ -1,0 +1,59 @@
+﻿{
+  "domain": "m1.fudaobang.cn",  
+  "is_debug": true,
+  "oracle": {
+    "hostname": "192.168.206.204", 
+    "port": 1521,
+    "database": "****", //orcl.localdomain
+    "user": "****",  //sztce
+    "password": "****" //szect
+  },
+  "wx": {
+    "app_id": "*************",  
+    "app_secret": "*************",
+    "wx_menu": {
+      "button": [
+        {
+          "name": "我的课程",
+          "sub_button": [
+            {
+              "type": "view",
+              "name": "我要选课",
+              "url": "http://m1.fudaobang.cn/wxmenu/selectCourse"
+            },
+            {
+              "type": "view",
+              "name": "选课信息",
+              "url": "http://m1.fudaobang.cn/wxmenu/myCourse"
+            },
+            {
+              "type": "view",
+              "name": "成绩查询",
+              "url": "http://m1.fudaobang.cn/wxmenu/queryScore"
+            }
+          ]
+        },
+        {
+          "name": "个人中心",
+          "sub_button": [
+            {
+              "type": "view",
+              "name": "个人信息",
+              "url": "http://m1.fudaobang.cn/wxmenu/personalCenter"
+            },
+            {
+              "type": "view",
+              "name": "单位管理",
+              "url": "http://m1.fudaobang.cn/wxmenu/unitManagement"
+            },
+            {
+              "type": "view",
+              "name": "联系我们",
+              "url": "http://m1.fudaobang.cn/wxmenu/contactUs"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

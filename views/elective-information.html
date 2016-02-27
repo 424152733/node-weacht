@@ -1,0 +1,56 @@
+
+<div ng-controller="eiController">
+    <div class="w-container" ng-cloak>
+        <div class="w-select-container">
+            <label class="control-label pull-left">期号：</label>
+            <select  class="form-control" change-select>
+                <option>20152</option>
+                <option>20151</option>
+                <option>20142</option>
+                <option>20141</option>
+                <option>20132</option>
+                <option>20131</option>
+                <option>20122</option>
+                <option>20121</option>
+                <option>20112</option>
+                <option>20111</option>
+                <option>20102</option>
+                <option>20101</option>
+                <option>20092</option>
+                <option>20091</option>
+                <option>20082</option>
+                <option>20081</option>
+                <option>20072</option>
+                <option>20071</option>
+                <option>20062</option>
+                <option>20061</option>
+                <option>20052</option>
+                <option>20052</option>
+                <option>20051</option>
+                <option>20042</option>
+                <option>20041</option>
+                <option>20032</option>
+            </select>
+        </div>
+        <div ng-if="courses.length > 0">
+            <a ng-repeat="course in courses" class="my-course-list" href="/course/detail?id={{course.SID}}">
+                <b ng-if="course.COURSE_TYPE == '远程'" style="color: #6facff">选课中</b>
+                <b ng-if="course.COURSE_TYPE == '面授'" style="color: #FF8787">已结束</b>
+                <div class="pull-right">
+                    <span class="payment">已缴费</span>
+                    <span class="accept">已受理</span>
+                </div>
+                <p style="margin-top: 5px">
+                    <span>20151-089 2013公需课 {{course.COURSE_NAME}}</span><br/>
+                    <span>{{course.DISCRIPTION}}- {{course.COURSE_TYPE}}</span>
+                </p>
+                <p style="color: #949494">开课时间-结束时间：{{course.CLASS_START_TIME}} ~ {{course.CLASS_END_TIME}}</p>
+            </a>
+        </div>
+        <div ng-if="courses.length == 0">
+            <h1>你没有选择任何课程</h1>
+        </div>
+    </div>
+</div>
+
+

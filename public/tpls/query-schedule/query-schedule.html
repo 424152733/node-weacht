@@ -1,0 +1,71 @@
+
+<div class="container" ng-controller="qScheduleController">
+    <form name="scheduleForm" class="form-horizontal" novalidate style="margin-top: 20px">
+        <div class="form-group">
+            <label class="col-xs-4 control-label text-right"  style="padding:7px 0 0 0" for="courseName">课号 / 课程名称:</label>
+            <div class="col-xs-8">
+                <input  type="text" name="courseName" id="courseName" ng-model="courseName" class="form-control" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-xs-4 control-label text-right" style="padding:7px 0 0 0" for="startTime">请选择开始时间:</label>
+            <div class="col-xs-8">
+                <div class="input-group date dataPicker">
+                    <input type="text"  class="form-control" ng-model="startTime" id="startTime" name="startTime" required/>
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-xs-4 control-label text-right" style="padding:7px 0 0 0" for="endTime">请选择结束时间:</label>
+            <div class="col-xs-8">
+                <div class="input-group date dataPicker">
+                    <input type="text" class="form-control" id="endTime" ng-model="endTime" name="endTime" required/>
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class=" col-xs-4 control-label text-right" style="padding:7px 0 0 0">快&nbsp;&nbsp;速&nbsp;&nbsp;选&nbsp;&nbsp;择:</label>
+            <div class="col-xs-8">
+                <select  class="form-control">
+                    <option>全部</option>
+                    <option>其他</option>
+                </select>
+            </div>
+        </div>
+        <button id="quickQuery" class="btn btn-primary btn-lg"  ng-disabled="scheduleForm.$invalid" style="width: 100%">立即查询</button>
+    </form>
+</div>
+    <div class="w-container" ng-show="!result.ifNull">
+        <h5>查询结果</h5>
+        <div class="w-container-list query-schedule-result">
+            <p style="color:#55739D">
+                <b>[201551-089] 2013公需课 组合1<br>(教师职业到的规范-新时期广东生态文明建设)</b>
+            </p>
+            <p>
+            <div><span>上课地点:</span></div>
+            <div><span>深圳大学南小区</span></div>
+            </p>
+            <p>
+            <div><span>开通时间:</span></div>
+            <div>
+                <span>2015/10/18(9:00-11:30)</span><br/>
+                <span>2015/10/18(9:00-11:30)</span>
+            </div>
+            </p>
+            <p>
+            <div><span>上课学员:</span></div>
+            <div>
+                <span>甲同学(13524151541)</span><br/>
+                <span>甲同学(13524151541)</span><br/>
+                <span>甲同学(13524151541)</span>
+            </div>
+            </p>
+        </div>
+    </div>
+

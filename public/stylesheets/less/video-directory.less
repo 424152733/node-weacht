@@ -1,0 +1,47 @@
+.border-radius(@lt,@rt,@lb,@rb){
+ -webkit-border-radius: @lt @rt @lb @rb;
+  border-radius: @lt @rt @lb @rb;
+}
+.tab-child(@bcgc){
+  width: 50%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background-color: @bcgc;
+  float: left;
+  color:#ffffff;
+}
+.study-online-tabs{
+  width: 100%;
+  height: 40px;
+  div:nth-child(1){
+    .tab-child(#2f87ff);
+    .border-radius( 5px,0,0,5px)
+  }
+  div:nth-child(2){
+    .tab-child(#b7b7b7);
+    .border-radius(0,5px,5px,0);
+  }
+}
+.study-online-content{
+  margin-top: 10px;
+  .classes{
+    height: 100px;
+    background-color: #ffffff;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    div:nth-child(1){
+      height: 100%;
+    }
+    div:nth-child(2){
+      height: 100%;
+    }
+    span{
+      padding: 3px 10px;
+      border-radius: 3px;
+      background-color: #96d577;
+      color:#ffffff
+    }
+  }
+}

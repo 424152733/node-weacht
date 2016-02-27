@@ -1,0 +1,55 @@
+
+<div ng-controller="qsController">
+    <div  class="w-container" ng-cloak>
+        <div class="w-select-container">
+            <label class="control-label pull-left">期号：</label>
+            <select  class="form-control" change-select>
+                <option>20152</option>
+                <option>20151</option>
+                <option>20142</option>
+                <option>20141</option>
+                <option>20132</option>
+                <option>20131</option>
+                <option>20122</option>
+                <option>20121</option>
+                <option>20112</option>
+                <option>20111</option>
+                <option>20102</option>
+                <option>20101</option>
+                <option>20092</option>
+                <option>20091</option>
+                <option>20082</option>
+                <option>20081</option>
+                <option>20072</option>
+                <option>20071</option>
+                <option>20062</option>
+                <option>20061</option>
+                <option>20052</option>
+                <option>20052</option>
+                <option>20051</option>
+                <option>20042</option>
+                <option>20041</option>
+                <option>20032</option>
+            </select>
+        </div>
+        <div ng-if="grades.length > 0" id="score-list">
+            <div ng-repeat="grade in grades" class="query-score-list">
+                <img src="/images/08.png" width="16px" height="16px"/>
+                <b style="color: #8B8B8C">{{grade.PLAN_YEAR_TERM}} 2013公需课 组合1</b><br/>
+                <b style="color: #8B8B8C">{{grade.COURSE_NAME}}</b><br/>
+                <b style="margin-top: 10px;">学&nbsp;&nbsp;号:{{grade.STUDENT_NUMBER}}</b><br/>
+                <b>学习课时:120</b>
+                <b style="margin-left: 25%">获得学时:120</b><br/>
+                <b>考试成绩:{{grade.EXAM_RESULT}}</b>
+                <b ng-if="grade.TOTAL_RESULT >= 60" style="margin-left: 25%;font-size: 16px">总成绩:合格</b><br/>
+                <b ng-if="grade.TOTAL_RESULT < 60" style="margin-left: 25%;font-size: 16px">总成绩:<b style=" color:#FF6357">不合格</b></b><br/>
+            </div>
+        </div>
+        <div ng-if="grades.length == 0">
+            <h1>你没有这期的选课</h1>
+        </div>
+    </div>
+</div>
+
+
+

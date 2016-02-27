@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Demo: play video with srt subtitle</title>
+</head>
+<body>
+    <div id="playercontainer"></div>
+    <script type="text/javascript" src="../player/cyberplayer.min.js"></script>
+    <script type="text/javascript">
+        var player = cyberplayer("playercontainer").setup({
+        width : 854,
+        height : 480,
+        backcolor : "#FFFFFF",
+        stretching : "uniform",
+        file : "http://demo-video.bj.bcebos.com/AdrenalineRush.mp4",
+        autoStart : true,
+        repeat : false,
+        volume : 100,
+        controls : "true",
+        tracks: [{
+          file: "http://demo-video.bj.bcebos.com/test_chinese.srt",
+          label: "Chinese",
+          kind: "captions",
+          "default": true
+        }, {
+          file: "http://demo-video.bj.bcebos.com/test_english.srt",
+          label: "English",
+          kind: "captions",
+          "default": false
+        }],
+        captions: {
+          //false表示背景透明，true表示背景黑色
+          back: false,
+          //设置字幕字体颜色
+          color: '00ffff',
+          //设置字幕字体大小
+          fontsize: 20
+        }
+        });
+    </script>
+</body>
+</html>
+

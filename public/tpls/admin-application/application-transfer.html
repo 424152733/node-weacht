@@ -1,0 +1,18 @@
+<ul class="nav nav-pills" style="margin-bottom: 10px">
+    <li class="w-nav-active" style="width: 49%"><a ui-sref="adminApplication.applicationTransfer">申请转让</a></li>
+    <li class="w-nav-default" style="width: 49%"><a ui-sref="adminApplication.historyTransfer">历史申请/转让</a></li>
+</ul>
+<div style="text-align: center;padding: 30px 0">
+    <p>请输入要申请/转让管理员权限的成员</p>
+    <input type="text" ng-model="inputName" list="nameList" style="width: 80%;height: 30px"/>
+    <datalist id="nameList">
+        <option ng-repeat="name in nameList" value="{{name}}"></option>
+    </datalist>
+    <div  style="padding-top: 30px">
+        <img src="/images/header.jpg"/><br/>
+        <div style="padding-top: 10px;font-weight: bold">郑明希</div>
+        <div>18600000000</div>
+    </div>
+    <button class="w-btn-default" style="float: left">提交申请</button>
+    <button class="w-btn-default" style="float: left">提交转让</button>
+</div>

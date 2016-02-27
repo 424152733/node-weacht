@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Demo: play AES128 encrypted HLS video</title>
+</head>
+<body>
+    <div id="playercontainer"></div>
+    <script type="text/javascript" src="../player/cyberplayer.min.js"></script>
+    <script type="text/javascript">
+        var player = cyberplayer("playercontainer").setup({
+        width : 854,
+        height : 480,
+        backcolor : "#FFFFFF",
+        stretching : "uniform",
+        file : "http://demo-video.bj.bcebos.com/AdrenalineRush_encrypt.m3u8",
+        autoStart : true,
+        repeat : false,
+        volume : 100,
+        controls : "over"
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,63 @@
+<ul class="nav nav-pills" style="margin-bottom: 10px" >
+    <li style="width: 49%" class="w-nav-default"><a ui-sref="changeSchool.inManager">转入管理</a></li>
+    <li style="width: 49%" class="w-nav-active"><a ui-sref="changeSchool.outManager">转出管理</a></li>
+</ul>
+<div class="container">
+    <form action="#" class="form-horizontal">
+        <div class="form-group">
+            <label class="col-xs-4 control-label text-left" style="padding-top: 7px;font-size: 14px">转出的成员</label>
+            <div class="col-xs-8">
+                <input type="text"  class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-xs-4 control-label text-left" style="padding-top: 7px;font-size: 14px">转出至</label>
+            <div class="col-xs-8">
+                <input type="text" class="form-control"/>
+            </div>
+        </div>
+    </form>
+    <div class="text-center" style="padding-top: 20px">
+        <img src="/images/header.jpg" alt=""/><br/>
+        <div style="padding-top: 10px;font-weight: bold">郑明希</div>
+        <div>18600000000</div>
+    </div>
+    <button modal-btn data-modal="out-manager-modal" style="border:none;width: 70%;margin:10px 0 0 15%;border-radius: 5px; background-color:#2F87FF; height: 40px;line-height: 40px;text-align: center;color: #ffffff;font-size: 16px;font-weight: bold;">确认提交申请</button>
+</div>
+<h5>最近转出记录</h5>
+<div class="admin-application-list w-container-list">
+    <div class="admin-application-info">
+        <div>
+            <img src="/images/header.jpg" width="70%" height="80px"/><br/>
+            <span>郑明明</span>
+        </div>
+        <div>
+            <p>
+                你申请郑明明成为深圳市宝安区石岩学校管理员
+            </p>
+            <p>
+                审批状态:同意
+            </p>
+            <p>
+                11月23日
+            </p>
+        </div>
+    </div>
+</div>
+<div id="out-manager-modal" style="margin-top: 150px" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel1">操作确认</h4>
+            </div>
+            <div class="modal-body">
+                确认审核同意？
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button  type="button" class="btn btn-primary" data-dismiss="modal">确认</button>
+            </div>
+        </div>
+    </div>
+</div>

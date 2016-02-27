@@ -1,0 +1,302 @@
+.admin-application-info {
+  height: 100px;
+}
+.admin-application-info div:first-child {
+  width: 30%;
+  text-align: center;
+  float: left;
+}
+.admin-application-info div:nth-child(2) {
+  margin-left: 3%;
+  width: 67%;
+  float: left;
+}
+.admin-application-info div:nth-child(2) p:nth-child(2) {
+  color: #667da1;
+}
+.admin-application-info div:nth-child(2) p:nth-child(3) {
+  text-align: right;
+}
+
+.change-school-list b {
+  color: royalblue;
+}
+.change-school-list div {
+  height: 35px;
+}
+.change-school-list div button {
+  width: 35%;
+}
+
+.course-detail {
+  width: 100%;
+}
+.course-detail b {
+  width: 15%;
+}
+.course-detail span {
+  margin-left: 19%;
+}
+
+.course-management-info b {
+  color: royalblue;
+}
+.course-management-info div {
+  height: 35px;
+}
+.course-management-info div button {
+  width: 35%;
+}
+
+.my-course-list {
+  height: 95px;
+  background-color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  display: block;
+}
+.my-course-list .payment {
+  padding: 3px 10px;
+  border-radius: 3px;
+  background-color: #f7bf67;
+  color: #ffffff;
+}
+.my-course-list .accept {
+  padding: 3px 10px;
+  border-radius: 3px;
+  background-color: #6cd6f0;
+  color: #ffffff;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+body {
+  background-color: #EBEBEB;
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+.w-container {
+  width: 96%;
+  margin-left: 2%;
+  padding: 10px 0;
+}
+ul,
+li {
+  list-style: none;
+}
+.w-select-container {
+  height: 30px;
+  margin-bottom: 10px;
+}
+.w-select-container label {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.w-select-container select {
+  width: 50%;
+  height: 30px;
+  float: left;
+}
+.w-nav-active {
+  background-color: #337ab7;
+}
+.w-nav-active a {
+  color: white;
+  text-align: center;
+}
+.w-nav-default {
+  background: #B7B7B7;
+}
+.w-nav-default a {
+  color: white;
+  text-align: center;
+}
+.w-container-list {
+  width: 100%;
+  -webkit-border-radius: 5px;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  margin-bottom: 5px;
+}
+.w-btn-default {
+  border: none;
+  width: 35%;
+  margin: 10px 0 0 10%;
+  border-radius: 5px;
+  background-color: #2F87FF;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.new-assessment-list b {
+  color: royalblue;
+}
+.new-assessment-list div {
+  height: 35px;
+}
+.new-assessment-list div button {
+  width: 35%;
+}
+
+.personal-center-login {
+  padding-top: 20px;
+}
+.personal-center-login h4 {
+  text-align: center;
+}
+.personal-center-login #signup {
+  margin-top: 20px;
+  width: 100%;
+}
+.personal-center-logout {
+  width: 100%;
+}
+.personal-center-logout div:first-child {
+  width: 40%;
+  margin-left: 30%;
+  height: 150px;
+  margin-top: 100px;
+}
+.personal-center-logout h4 {
+  padding: 15px 0;
+}
+.personal-center-logout button {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.photo-audit {
+  margin-top: 5%;
+}
+.photo-audit div {
+  width: 90%;
+  margin-left: 5%;
+  height: 150px;
+}
+
+#scheduleForm label {
+  padding: 7px 0 0 0;
+}
+#scheduleForm #quickQuery {
+  border: none;
+  width: 70%;
+  margin: 10px 0 0 15%;
+  border-radius: 5px;
+  background-color: #2F87FF;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.query-schedule-result {
+  margin-left: 2%;
+}
+.query-schedule-result div:nth-child(odd) {
+  display: inline-block;
+}
+.query-schedule-result div:nth-child(even) {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.query-score-list {
+  position: relative;
+  border: 1px solid #cccccc;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.query-score-list img {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  z-index: 8;
+}
+
+.select-class-list .content {
+  padding: 10px 10px 15px 10px;
+  border-radius: 5px;
+  margin-top: 3px;
+  border: 1px solid #cccccc;
+}
+
+.unit-management {
+  padding-top: 25%;
+}
+.unit-management a {
+  display: block;
+}
+.unit-management p {
+  padding-top: 10px;
+}
+
+.study-online-tabs {
+  width: 100%;
+  height: 40px;
+}
+.study-online-tabs div:nth-child(1) {
+  width: 50%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background-color: #2f87ff;
+  float: left;
+  color: #ffffff;
+  -webkit-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+}
+.study-online-tabs div:nth-child(2) {
+  width: 50%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background-color: #b7b7b7;
+  float: left;
+  color: #ffffff;
+  -webkit-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+.study-online-content {
+  margin-top: 10px;
+}
+.study-online-content .classes {
+  height: 100px;
+  background-color: #ffffff;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.study-online-content .classes div:nth-child(1) {
+  height: 100%;
+}
+.study-online-content .classes div:nth-child(2) {
+  height: 100%;
+}
+.study-online-content .classes span {
+  padding: 3px 10px;
+  border-radius: 3px;
+  background-color: #96d577;
+  color: #ffffff;
+}
